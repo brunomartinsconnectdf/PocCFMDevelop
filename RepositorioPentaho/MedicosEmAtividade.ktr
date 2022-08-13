@@ -428,33 +428,25 @@
     <created_user>-</created_user>
     <created_date>2022/08/02 11:55:59.418</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2022/08/11 17:32:10.816</modified_date>
+    <modified_date>2022/08/13 00:43:37.986</modified_date>
     <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
   <connection>
-    <name>CFMLocal</name>
+    <name>CFMLocalPostgres</name>
     <server>localhost</server>
-    <type>MYSQL</type>
+    <type>POSTGRESQL</type>
     <access>Native</access>
-    <database>stagecfm</database>
-    <port>3306</port>
-    <username>root</username>
-    <password>Encrypted </password>
+    <database>cfm</database>
+    <port>5432</port>
+    <username>cfm</username>
+    <password>Encrypted 2be98afc86aa7f2e4860caa71ccc3fd89</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
     <attributes>
-      <attribute>
-        <code>EXTRA_OPTION_MYSQL.defaultFetchSize</code>
-        <attribute>500</attribute>
-      </attribute>
-      <attribute>
-        <code>EXTRA_OPTION_MYSQL.useCursorFetch</code>
-        <attribute>true</attribute>
-      </attribute>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
         <attribute>N</attribute>
@@ -469,7 +461,7 @@
       </attribute>
       <attribute>
         <code>PORT_NUMBER</code>
-        <attribute>3306</attribute>
+        <attribute>5432</attribute>
       </attribute>
       <attribute>
         <code>PRESERVE_RESERVED_WORD_CASE</code>
@@ -478,10 +470,6 @@
       <attribute>
         <code>QUOTE_ALL_FIELDS</code>
         <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>STREAM_RESULTS</code>
-        <attribute>Y</attribute>
       </attribute>
       <attribute>
         <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
@@ -532,7 +520,6 @@
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
     <newline_possible>N</newline_possible>
-    <format>mixed</format>
     <encoding/>
     <fields>
       <field>
@@ -2070,7 +2057,7 @@
       </meta>
       <meta>
         <name>V15_0</name>
-        <rename>Sexo</rename>
+        <rename>SexoDescricao</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2087,7 +2074,7 @@
       </meta>
       <meta>
         <name>V16_0</name>
-        <rename>MunicipioDeNaturalidade</rename>
+        <rename>MunicipioDeNaturalidadeDesc</rename>
         <type>None</type>
         <length>22</length>
         <precision>-2</precision>
@@ -2138,7 +2125,7 @@
       </meta>
       <meta>
         <name>V19_0</name>
-        <rename>UfDeNaturalidade</rename>
+        <rename>UfDeNaturalidadeDesc</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2240,7 +2227,7 @@
       </meta>
       <meta>
         <name>V26_0</name>
-        <rename>MunicipioEscolaMedica</rename>
+        <rename>MunicipioEscolaMedicaDesc</rename>
         <type>None</type>
         <length>17</length>
         <precision>-2</precision>
@@ -2393,7 +2380,7 @@
       </meta>
       <meta>
         <name>V38_0</name>
-        <rename>MunicipioResidencia</rename>
+        <rename>MunicipioResidenciaDesc</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2410,7 +2397,7 @@
       </meta>
       <meta>
         <name>V39_0</name>
-        <rename>MunicipioComercial</rename>
+        <rename>MunicipioComercialDesc</rename>
         <type>None</type>
         <length>26</length>
         <precision>-2</precision>
@@ -3641,9 +3628,9 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>CFMLocal</connection>
-    <schema/>
-    <table>MedicosEmAtividade</table>
+    <connection>CFMLocalPostgres</connection>
+    <schema>stage</schema>
+    <table>medicosematividade</table>
     <commit>1000</commit>
     <truncate>Y</truncate>
     <ignore_errors>N</ignore_errors>
@@ -3732,24 +3719,24 @@
         <stream_name>Sexo</stream_name>
       </field>
       <field>
-        <column_name>Sexo_1</column_name>
-        <stream_name>Sexo_1</stream_name>
+        <column_name>SexoDescricao</column_name>
+        <stream_name>SexoDescricao</stream_name>
+      </field>
+      <field>
+        <column_name>MunicipioDeNaturalidadeDesc</column_name>
+        <stream_name>MunicipioDeNaturalidadeDesc</stream_name>
       </field>
       <field>
         <column_name>MunicipioDeNaturalidade</column_name>
         <stream_name>MunicipioDeNaturalidade</stream_name>
       </field>
       <field>
-        <column_name>MunicipioDeNaturalidade_1</column_name>
-        <stream_name>MunicipioDeNaturalidade_1</stream_name>
-      </field>
-      <field>
         <column_name>UfDeNaturalidade</column_name>
         <stream_name>UfDeNaturalidade</stream_name>
       </field>
       <field>
-        <column_name>UfDeNaturalidade_1</column_name>
-        <stream_name>UfDeNaturalidade_1</stream_name>
+        <column_name>UfDeNaturalidadeDesc</column_name>
+        <stream_name>UfDeNaturalidadeDesc</stream_name>
       </field>
       <field>
         <column_name>RegiaoDeNaturalidade</column_name>
@@ -3772,12 +3759,12 @@
         <stream_name>NaturezaJuridicaEscolaMedica</stream_name>
       </field>
       <field>
-        <column_name>MunicipioEscolaMedica</column_name>
-        <stream_name>MunicipioEscolaMedica</stream_name>
+        <column_name>MunicipioEscolaMedicaDesc</column_name>
+        <stream_name>MunicipioEscolaMedicaDesc</stream_name>
       </field>
       <field>
-        <column_name>MunicipioEscolaMedica_1</column_name>
-        <stream_name>MunicipioEscolaMedica_1</stream_name>
+        <column_name>MunicipioEscolaMedica</column_name>
+        <stream_name>MunicipioEscolaMedica</stream_name>
       </field>
       <field>
         <column_name>UfDaEscolaMedica</column_name>
@@ -3808,12 +3795,12 @@
         <stream_name>UfDeResidencia</stream_name>
       </field>
       <field>
-        <column_name>MunicipioResidencia_1</column_name>
-        <stream_name>MunicipioResidencia_1</stream_name>
+        <column_name>MunicipioResidenciaDesc</column_name>
+        <stream_name>MunicipioResidenciaDesc</stream_name>
       </field>
       <field>
-        <column_name>MunicipioComercial</column_name>
-        <stream_name>MunicipioComercial</stream_name>
+        <column_name>MunicipioComercialDesc</column_name>
+        <stream_name>MunicipioComercialDesc</stream_name>
       </field>
       <field>
         <column_name>CEPMunicipioComercial</column_name>
@@ -3824,8 +3811,8 @@
         <stream_name>UfComercial</stream_name>
       </field>
       <field>
-        <column_name>MunicipioComercial_1</column_name>
-        <stream_name>MunicipioComercial_1</stream_name>
+        <column_name>MunicipioComercial</column_name>
+        <stream_name>MunicipioComercial</stream_name>
       </field>
       <field>
         <column_name>MunicipioDeCorrespondencia</column_name>

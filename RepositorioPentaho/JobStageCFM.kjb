@@ -7,30 +7,22 @@
   <created_user>-</created_user>
   <created_date>2022/08/02 16:40:43.275</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2022/08/13 00:24:38.472</modified_date>
+  <modified_date>2022/08/13 00:44:30.910</modified_date>
   <parameters>
     </parameters>
   <connection>
-    <name>CFMLocal</name>
+    <name>CFMLocalPostgres</name>
     <server>localhost</server>
-    <type>MYSQL</type>
+    <type>POSTGRESQL</type>
     <access>Native</access>
-    <database>stagecfm</database>
-    <port>3306</port>
-    <username>root</username>
-    <password>Encrypted </password>
+    <database>cfm</database>
+    <port>5432</port>
+    <username>cfm</username>
+    <password>Encrypted 2be98afc86aa7f2e4860caa71ccc3fd89</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
     <attributes>
-      <attribute>
-        <code>EXTRA_OPTION_MYSQL.defaultFetchSize</code>
-        <attribute>500</attribute>
-      </attribute>
-      <attribute>
-        <code>EXTRA_OPTION_MYSQL.useCursorFetch</code>
-        <attribute>true</attribute>
-      </attribute>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
         <attribute>N</attribute>
@@ -45,7 +37,7 @@
       </attribute>
       <attribute>
         <code>PORT_NUMBER</code>
-        <attribute>3306</attribute>
+        <attribute>5432</attribute>
       </attribute>
       <attribute>
         <code>PRESERVE_RESERVED_WORD_CASE</code>
@@ -54,10 +46,6 @@
       <attribute>
         <code>QUOTE_ALL_FIELDS</code>
         <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>STREAM_RESULTS</code>
-        <attribute>Y</attribute>
       </attribute>
       <attribute>
         <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
@@ -414,12 +402,11 @@
       <description/>
       <type>SQL</type>
       <attributes/>
-      <sql>-- Active: 1659469941563@@127.0.0.1@3306@stagecfm
-CREATE TABLE MedicosEmAtividade
+      <sql>CREATE TABLE stage.medicosematividade
 (
   id BIGINT
 , crm BIGINT
-, DataInscricaoCRM DATETIME
+, DataInscricaoCRM TIMESTAMP
 , TipoDeCRM BIGINT
 , ContagemDoCRm BIGINT
 , SituacaoDetalhada BIGINT
@@ -430,38 +417,38 @@ CREATE TABLE MedicosEmAtividade
 , ClasseMunicipio BIGINT
 , CapitalInterior BIGINT
 , RegiaoInscricao BIGINT
-, DataNascimento DATETIME
-, Idade VARCHAR(200)
+, DataNascimento TIMESTAMP
+, Idade TEXT
 , IdadeCatUm BIGINT
 , IdadeCatDois BIGINT
-, Sexo CHAR(200)
-, Sexo_1 VARCHAR(200)
-, MunicipioDeNaturalidade VARCHAR(200)
-, MunicipioDeNaturalidade_1 BIGINT
-, UfDeNaturalidade VARCHAR(200)
-, UfDeNaturalidade_1 BIGINT
+, Sexo TEXT
+, SexoDescricao TEXT
+, MunicipioDeNaturalidadeDesc TEXT
+, MunicipioDeNaturalidade BIGINT
+, UfDeNaturalidade TEXT
+, UfDeNaturalidadeDesc BIGINT
 , RegiaoDeNaturalidade BIGINT
-, Pais VARCHAR(200)
-, Escola VARCHAR(200)
+, Pais TEXT
+, Escola TEXT
 , UniversidadeOrigem BIGINT
 , NaturezaJuridicaEscolaMedica BIGINT
-, MunicipioEscolaMedica VARCHAR(200)
-, MunicipioEscolaMedica_1 BIGINT
+, MunicipioEscolaMedicaDesc TEXT
+, MunicipioEscolaMedica BIGINT
 , UfDaEscolaMedica BIGINT
-, DataFormatura VARCHAR(200)
+, DataFormatura TEXT
 , TempoDeFormado BIGINT
-, DataSituacaoDetalhada VARCHAR(200)
+, DataSituacaoDetalhada TEXT
 , MunicipioResidencia BIGINT
-, CEPResidencia VARCHAR(200)
+, CEPResidencia TEXT
 , UfDeResidencia BIGINT
-, MunicipioResidencia_1 BIGINT
-, MunicipioComercial VARCHAR(200)
+, MunicipioResidenciaDesc BIGINT
+, MunicipioComercialDesc TEXT
 , CEPMunicipioComercial BIGINT
-, UfComercial VARCHAR(200)
-, MunicipioComercial_1 BIGINT
-, MunicipioDeCorrespondencia VARCHAR(200)
+, UfComercial TEXT
+, MunicipioComercial BIGINT
+, MunicipioDeCorrespondencia TEXT
 , CEPDeCorrespondecia BIGINT
-, UfDeCorrespondecia VARCHAR(200)
+, UfDeCorrespondecia TEXT
 , ProgramaResidenciaEmCurso BIGINT
 , PrimeiraResidencia BIGINT
 , SegundaResidencia BIGINT
@@ -525,14 +512,12 @@ CREATE TABLE MedicosEmAtividade
 , Urologia BIGINT
 , EspecialidadesCirurgicas BIGINT
 , SAO BIGINT
-, total_tit BIGINT);
-
-</sql>
+, total_tit BIGINT);</sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>
       <sendOneStatement>F</sendOneStatement>
-      <connection>CFMLocal</connection>
+      <connection>CFMLocalPostgres</connection>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
@@ -546,8 +531,8 @@ CREATE TABLE MedicosEmAtividade
       <type>TABLE_EXISTS</type>
       <attributes/>
       <tablename>medicosematividade</tablename>
-      <schemaname>stagecfm</schemaname>
-      <connection>CFMLocal</connection>
+      <schemaname>stage</schemaname>
+      <connection>CFMLocalPostgres</connection>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
