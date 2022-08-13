@@ -428,33 +428,25 @@
     <created_user>-</created_user>
     <created_date>2022/08/02 11:55:59.418</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2022/08/12 16:24:21.107</modified_date>
+    <modified_date>2022/08/13 01:26:13.413</modified_date>
     <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
   <connection>
-    <name>CFMLocal</name>
+    <name>CFMLocalPostgres</name>
     <server>localhost</server>
-    <type>MYSQL</type>
+    <type>POSTGRESQL</type>
     <access>Native</access>
-    <database>stagecfm</database>
-    <port>3306</port>
-    <username>root</username>
-    <password>Encrypted </password>
+    <database>cfm</database>
+    <port>5432</port>
+    <username>cfm</username>
+    <password>Encrypted 2be98afc86aa7f2e4860caa71ccc3fd89</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
     <attributes>
-      <attribute>
-        <code>EXTRA_OPTION_MYSQL.defaultFetchSize</code>
-        <attribute>500</attribute>
-      </attribute>
-      <attribute>
-        <code>EXTRA_OPTION_MYSQL.useCursorFetch</code>
-        <attribute>true</attribute>
-      </attribute>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
         <attribute>N</attribute>
@@ -469,7 +461,7 @@
       </attribute>
       <attribute>
         <code>PORT_NUMBER</code>
-        <attribute>3306</attribute>
+        <attribute>5432</attribute>
       </attribute>
       <attribute>
         <code>PRESERVE_RESERVED_WORD_CASE</code>
@@ -478,10 +470,6 @@
       <attribute>
         <code>QUOTE_ALL_FIELDS</code>
         <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>STREAM_RESULTS</code>
-        <attribute>Y</attribute>
       </attribute>
       <attribute>
         <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
@@ -557,10 +545,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>DataInscricaoCRM</name>
-        <rename>DataInscricaoCRM</rename>
+        <name>datainscricaocrm</name>
+        <rename>datainscricaocrm</rename>
         <type>None</type>
-        <length>0</length>
+        <length>6</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -574,8 +562,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>TipoDeCRM</name>
-        <rename>TipoDeCRM</rename>
+        <name>tipodecrm</name>
+        <rename>tipodecrm</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -591,8 +579,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>ContagemDoCRm</name>
-        <rename>ContagemDoCRm</rename>
+        <name>contagemdocrm</name>
+        <rename>contagemdocrm</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -608,8 +596,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>SituacaoDetalhada</name>
-        <rename>SituacaoDetalhada</rename>
+        <name>situacaodetalhada</name>
+        <rename>situacaodetalhada</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -625,8 +613,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>SituacaoGeral</name>
-        <rename>SituacaoGeral</rename>
+        <name>situacaogeral</name>
+        <rename>situacaogeral</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -642,8 +630,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>UfDeInscricao</name>
-        <rename>UfDeInscricao</rename>
+        <name>ufdeinscricao</name>
+        <rename>ufdeinscricao</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -659,8 +647,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Municipio</name>
-        <rename>Municipio</rename>
+        <name>municipio</name>
+        <rename>municipio</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -676,8 +664,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>EstratoMunicipio</name>
-        <rename>EstratoMunicipio</rename>
+        <name>estratomunicipio</name>
+        <rename>estratomunicipio</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -693,8 +681,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>ClasseMunicipio</name>
-        <rename>ClasseMunicipio</rename>
+        <name>classemunicipio</name>
+        <rename>classemunicipio</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -710,8 +698,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CapitalInterior</name>
-        <rename>CapitalInterior</rename>
+        <name>capitalinterior</name>
+        <rename>capitalinterior</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -727,8 +715,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>RegiaoInscricao</name>
-        <rename>RegiaoInscricao</rename>
+        <name>regiaoinscricao</name>
+        <rename>regiaoinscricao</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -744,10 +732,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>DataNascimento</name>
-        <rename>DataNascimento</rename>
+        <name>datanascimento</name>
+        <rename>datanascimento</rename>
         <type>None</type>
-        <length>0</length>
+        <length>6</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -761,10 +749,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Idade</name>
-        <rename>Idade</rename>
+        <name>idade</name>
+        <rename>idade</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -778,8 +766,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>IdadeCatUm</name>
-        <rename>IdadeCatUm</rename>
+        <name>idadecatum</name>
+        <rename>idadecatum</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -795,8 +783,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>IdadeCatDois</name>
-        <rename>IdadeCatDois</rename>
+        <name>idadecatdois</name>
+        <rename>idadecatdois</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -812,10 +800,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Sexo</name>
-        <rename>Sexo</rename>
+        <name>sexo</name>
+        <rename>sexo</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -829,10 +817,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Sexo_1</name>
-        <rename>Sexo_1</rename>
+        <name>sexodescricao</name>
+        <rename>sexodescricao</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -846,10 +834,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MunicipioDeNaturalidade</name>
-        <rename>MunicipioDeNaturalidade</rename>
+        <name>municipiodenaturalidadedesc</name>
+        <rename>municipiodenaturalidadedesc</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -863,8 +851,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MunicipioDeNaturalidade_1</name>
-        <rename>MunicipioDeNaturalidade_1</rename>
+        <name>municipiodenaturalidade</name>
+        <rename>municipiodenaturalidade</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -880,10 +868,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>UfDeNaturalidade</name>
-        <rename>UfDeNaturalidade</rename>
+        <name>ufdenaturalidade</name>
+        <rename>ufdenaturalidade</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -897,8 +885,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>UfDeNaturalidade_1</name>
-        <rename>UfDeNaturalidade_1</rename>
+        <name>ufdenaturalidadedesc</name>
+        <rename>ufdenaturalidadedesc</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -914,8 +902,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>RegiaoDeNaturalidade</name>
-        <rename>RegiaoDeNaturalidade</rename>
+        <name>regiaodenaturalidade</name>
+        <rename>regiaodenaturalidade</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -931,10 +919,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Pais</name>
-        <rename>Pais</rename>
+        <name>pais</name>
+        <rename>pais</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -948,10 +936,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Escola</name>
-        <rename>Escola</rename>
+        <name>escola</name>
+        <rename>escola</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -965,8 +953,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>UniversidadeOrigem</name>
-        <rename>UniversidadeOrigem</rename>
+        <name>universidadeorigem</name>
+        <rename>universidadeorigem</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -982,8 +970,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>NaturezaJuridicaEscolaMedica</name>
-        <rename>NaturezaJuridicaEscolaMedica</rename>
+        <name>naturezajuridicaescolamedica</name>
+        <rename>naturezajuridicaescolamedica</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -999,10 +987,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MunicipioEscolaMedica</name>
-        <rename>MunicipioEscolaMedica</rename>
+        <name>municipioescolamedicadesc</name>
+        <rename>municipioescolamedicadesc</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1016,8 +1004,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MunicipioEscolaMedica_1</name>
-        <rename>MunicipioEscolaMedica_1</rename>
+        <name>municipioescolamedica</name>
+        <rename>municipioescolamedica</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1033,8 +1021,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>UfDaEscolaMedica</name>
-        <rename>UfDaEscolaMedica</rename>
+        <name>ufdaescolamedica</name>
+        <rename>ufdaescolamedica</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1050,10 +1038,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>DataFormatura</name>
-        <rename>DataFormatura</rename>
+        <name>dataformatura</name>
+        <rename>dataformatura</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1067,8 +1055,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>TempoDeFormado</name>
-        <rename>TempoDeFormado</rename>
+        <name>tempodeformado</name>
+        <rename>tempodeformado</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1084,10 +1072,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>DataSituacaoDetalhada</name>
-        <rename>DataSituacaoDetalhada</rename>
+        <name>datasituacaodetalhada</name>
+        <rename>datasituacaodetalhada</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1101,8 +1089,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MunicipioResidencia</name>
-        <rename>MunicipioResidencia</rename>
+        <name>municipioresidencia</name>
+        <rename>municipioresidencia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1118,10 +1106,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CEPResidencia</name>
-        <rename>CEPResidencia</rename>
+        <name>cepresidencia</name>
+        <rename>cepresidencia</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1135,8 +1123,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>UfDeResidencia</name>
-        <rename>UfDeResidencia</rename>
+        <name>ufderesidencia</name>
+        <rename>ufderesidencia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1152,8 +1140,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MunicipioResidencia_1</name>
-        <rename>MunicipioResidencia_1</rename>
+        <name>municipioresidenciadesc</name>
+        <rename>municipioresidenciadesc</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1169,10 +1157,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MunicipioComercial</name>
-        <rename>MunicipioComercial</rename>
+        <name>municipiocomercialdesc</name>
+        <rename>municipiocomercialdesc</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1186,8 +1174,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CEPMunicipioComercial</name>
-        <rename>CEPMunicipioComercial</rename>
+        <name>cepmunicipiocomercial</name>
+        <rename>cepmunicipiocomercial</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1203,10 +1191,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>UfComercial</name>
-        <rename>UfComercial</rename>
+        <name>ufcomercial</name>
+        <rename>ufcomercial</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1220,8 +1208,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MunicipioComercial_1</name>
-        <rename>MunicipioComercial_1</rename>
+        <name>municipiocomercial</name>
+        <rename>municipiocomercial</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1237,10 +1225,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MunicipioDeCorrespondencia</name>
-        <rename>MunicipioDeCorrespondencia</rename>
+        <name>municipiodecorrespondencia</name>
+        <rename>municipiodecorrespondencia</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1254,8 +1242,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CEPDeCorrespondecia</name>
-        <rename>CEPDeCorrespondecia</rename>
+        <name>cepdecorrespondecia</name>
+        <rename>cepdecorrespondecia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1271,10 +1259,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>UfDeCorrespondecia</name>
-        <rename>UfDeCorrespondecia</rename>
+        <name>ufdecorrespondecia</name>
+        <rename>ufdecorrespondecia</rename>
         <type>None</type>
-        <length>200</length>
+        <length>2147483647</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1288,8 +1276,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>ProgramaResidenciaEmCurso</name>
-        <rename>ProgramaResidenciaEmCurso</rename>
+        <name>programaresidenciaemcurso</name>
+        <rename>programaresidenciaemcurso</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1305,8 +1293,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>PrimeiraResidencia</name>
-        <rename>PrimeiraResidencia</rename>
+        <name>primeiraresidencia</name>
+        <rename>primeiraresidencia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1322,8 +1310,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>SegundaResidencia</name>
-        <rename>SegundaResidencia</rename>
+        <name>segundaresidencia</name>
+        <rename>segundaresidencia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1339,8 +1327,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>TerceiraResidencia</name>
-        <rename>TerceiraResidencia</rename>
+        <name>terceiraresidencia</name>
+        <rename>terceiraresidencia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1356,8 +1344,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>QuartaResidencia</name>
-        <rename>QuartaResidencia</rename>
+        <name>quartaresidencia</name>
+        <rename>quartaresidencia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1373,8 +1361,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Especialidade</name>
-        <rename>Especialidade</rename>
+        <name>especialidade</name>
+        <rename>especialidade</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1390,8 +1378,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Acupuntura</name>
-        <rename>Acupuntura</rename>
+        <name>acupuntura</name>
+        <rename>acupuntura</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1407,8 +1395,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>AlergiaImunologia</name>
-        <rename>AlergiaImunologia</rename>
+        <name>alergiaimunologia</name>
+        <rename>alergiaimunologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1424,8 +1412,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Anestesiologia</name>
-        <rename>Anestesiologia</rename>
+        <name>anestesiologia</name>
+        <rename>anestesiologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1441,8 +1429,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Angiologia</name>
-        <rename>Angiologia</rename>
+        <name>angiologia</name>
+        <rename>angiologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1458,8 +1446,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Cardiologia</name>
-        <rename>Cardiologia</rename>
+        <name>cardiologia</name>
+        <rename>cardiologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1475,8 +1463,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CirurgiaCardiovascular</name>
-        <rename>CirurgiaCardiovascular</rename>
+        <name>cirurgiacardiovascular</name>
+        <rename>cirurgiacardiovascular</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1492,8 +1480,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CirurgiadaMao</name>
-        <rename>CirurgiadaMao</rename>
+        <name>cirurgiadamao</name>
+        <rename>cirurgiadamao</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1509,8 +1497,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CirurgiadeCabecaePescoco</name>
-        <rename>CirurgiadeCabecaePescoco</rename>
+        <name>cirurgiadecabecaepescoco</name>
+        <rename>cirurgiadecabecaepescoco</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1526,8 +1514,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CirurgiadoAparelhoDigestivo</name>
-        <rename>CirurgiadoAparelhoDigestivo</rename>
+        <name>cirurgiadoaparelhodigestivo</name>
+        <rename>cirurgiadoaparelhodigestivo</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1543,8 +1531,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CirurgiaGeral</name>
-        <rename>CirurgiaGeral</rename>
+        <name>cirurgiageral</name>
+        <rename>cirurgiageral</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1560,8 +1548,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CirurgiaOncologica</name>
-        <rename>CirurgiaOncologica</rename>
+        <name>cirurgiaoncologica</name>
+        <rename>cirurgiaoncologica</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1577,8 +1565,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CirurgiaPediatrica</name>
-        <rename>CirurgiaPediatrica</rename>
+        <name>cirurgiapediatrica</name>
+        <rename>cirurgiapediatrica</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1594,8 +1582,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CirurgiaPlastica</name>
-        <rename>CirurgiaPlastica</rename>
+        <name>cirurgiaplastica</name>
+        <rename>cirurgiaplastica</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1611,8 +1599,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CirurgiaToracia</name>
-        <rename>CirurgiaToracia</rename>
+        <name>cirurgiatoracia</name>
+        <rename>cirurgiatoracia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1628,8 +1616,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CirurgiaVascular</name>
-        <rename>CirurgiaVascular</rename>
+        <name>cirurgiavascular</name>
+        <rename>cirurgiavascular</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1645,8 +1633,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>ClinicaMédica</name>
-        <rename>ClinicaMédica</rename>
+        <name>clinicamédica</name>
+        <rename>clinicamédica</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1662,8 +1650,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Coloproctologia</name>
-        <rename>Coloproctologia</rename>
+        <name>coloproctologia</name>
+        <rename>coloproctologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1679,8 +1667,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Dermatologia</name>
-        <rename>Dermatologia</rename>
+        <name>dermatologia</name>
+        <rename>dermatologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1696,8 +1684,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>EndocrinologiaeMetabologia</name>
-        <rename>EndocrinologiaeMetabologia</rename>
+        <name>endocrinologiaemetabologia</name>
+        <rename>endocrinologiaemetabologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1713,8 +1701,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Endoscopia</name>
-        <rename>Endoscopia</rename>
+        <name>endoscopia</name>
+        <rename>endoscopia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1730,8 +1718,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Gastroenterologia</name>
-        <rename>Gastroenterologia</rename>
+        <name>gastroenterologia</name>
+        <rename>gastroenterologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1747,8 +1735,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>GeneticaMedica</name>
-        <rename>GeneticaMedica</rename>
+        <name>geneticamedica</name>
+        <rename>geneticamedica</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1764,8 +1752,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Geriatria</name>
-        <rename>Geriatria</rename>
+        <name>geriatria</name>
+        <rename>geriatria</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1781,8 +1769,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>GinecologiaeObstetricia</name>
-        <rename>GinecologiaeObstetricia</rename>
+        <name>ginecologiaeobstetricia</name>
+        <rename>ginecologiaeobstetricia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1798,8 +1786,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>HematologiaeHemoterapia</name>
-        <rename>HematologiaeHemoterapia</rename>
+        <name>hematologiaehemoterapia</name>
+        <rename>hematologiaehemoterapia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1815,8 +1803,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Homeopatia</name>
-        <rename>Homeopatia</rename>
+        <name>homeopatia</name>
+        <rename>homeopatia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1832,8 +1820,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Infectologia</name>
-        <rename>Infectologia</rename>
+        <name>infectologia</name>
+        <rename>infectologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1849,8 +1837,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Mastologia</name>
-        <rename>Mastologia</rename>
+        <name>mastologia</name>
+        <rename>mastologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1866,8 +1854,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MedicinadeEmergência</name>
-        <rename>MedicinadeEmergência</rename>
+        <name>medicinadeemergência</name>
+        <rename>medicinadeemergência</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1883,8 +1871,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MedicinaDeFamiliaeComunidade</name>
-        <rename>MedicinaDeFamiliaeComunidade</rename>
+        <name>medicinadefamiliaecomunidade</name>
+        <rename>medicinadefamiliaecomunidade</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1900,8 +1888,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MedicinaDoTrabalho</name>
-        <rename>MedicinaDoTrabalho</rename>
+        <name>medicinadotrabalho</name>
+        <rename>medicinadotrabalho</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1917,8 +1905,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MedicinadeTrafego</name>
-        <rename>MedicinadeTrafego</rename>
+        <name>medicinadetrafego</name>
+        <rename>medicinadetrafego</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1934,8 +1922,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MedicinaEsportiva</name>
-        <rename>MedicinaEsportiva</rename>
+        <name>medicinaesportiva</name>
+        <rename>medicinaesportiva</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1951,8 +1939,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MedicinaFisicaeReabilitacao</name>
-        <rename>MedicinaFisicaeReabilitacao</rename>
+        <name>medicinafisicaereabilitacao</name>
+        <rename>medicinafisicaereabilitacao</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1968,8 +1956,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MedicinaIntensiva</name>
-        <rename>MedicinaIntensiva</rename>
+        <name>medicinaintensiva</name>
+        <rename>medicinaintensiva</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -1985,8 +1973,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MedicinaLegalEPericiaMedica</name>
-        <rename>MedicinaLegalEPericiaMedica</rename>
+        <name>medicinalegalepericiamedica</name>
+        <rename>medicinalegalepericiamedica</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2002,8 +1990,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MedicinaNuclear</name>
-        <rename>MedicinaNuclear</rename>
+        <name>medicinanuclear</name>
+        <rename>medicinanuclear</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2019,8 +2007,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>MedicinaPreventivaESocial</name>
-        <rename>MedicinaPreventivaESocial</rename>
+        <name>medicinapreventivaesocial</name>
+        <rename>medicinapreventivaesocial</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2036,8 +2024,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Nefrologia</name>
-        <rename>Nefrologia</rename>
+        <name>nefrologia</name>
+        <rename>nefrologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2053,8 +2041,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Neurocirurgia</name>
-        <rename>Neurocirurgia</rename>
+        <name>neurocirurgia</name>
+        <rename>neurocirurgia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2070,8 +2058,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Neurologia</name>
-        <rename>Neurologia</rename>
+        <name>neurologia</name>
+        <rename>neurologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2087,8 +2075,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Nutrologia</name>
-        <rename>Nutrologia</rename>
+        <name>nutrologia</name>
+        <rename>nutrologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2104,8 +2092,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Oftalmologia</name>
-        <rename>Oftalmologia</rename>
+        <name>oftalmologia</name>
+        <rename>oftalmologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2121,8 +2109,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>OncologiaClinica</name>
-        <rename>OncologiaClinica</rename>
+        <name>oncologiaclinica</name>
+        <rename>oncologiaclinica</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2138,8 +2126,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>OrtopediaETraumatologia</name>
-        <rename>OrtopediaETraumatologia</rename>
+        <name>ortopediaetraumatologia</name>
+        <rename>ortopediaetraumatologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2155,8 +2143,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Otorrinolaringologia</name>
-        <rename>Otorrinolaringologia</rename>
+        <name>otorrinolaringologia</name>
+        <rename>otorrinolaringologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2172,8 +2160,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Patologia</name>
-        <rename>Patologia</rename>
+        <name>patologia</name>
+        <rename>patologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2189,8 +2177,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>PatologiaClinicaMedicinaLaboratorial</name>
-        <rename>PatologiaClinicaMedicinaLaboratorial</rename>
+        <name>patologiaclinicamedicinalaboratorial</name>
+        <rename>patologiaclinicamedicinalaboratorial</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2206,8 +2194,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Pediatria</name>
-        <rename>Pediatria</rename>
+        <name>pediatria</name>
+        <rename>pediatria</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2223,8 +2211,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Pneumologia</name>
-        <rename>Pneumologia</rename>
+        <name>pneumologia</name>
+        <rename>pneumologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2240,8 +2228,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Psiquiatria</name>
-        <rename>Psiquiatria</rename>
+        <name>psiquiatria</name>
+        <rename>psiquiatria</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2257,8 +2245,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>RadiologiaDiagnosticoPorImagem</name>
-        <rename>RadiologiaDiagnosticoPorImagem</rename>
+        <name>radiologiadiagnosticoporimagem</name>
+        <rename>radiologiadiagnosticoporimagem</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2274,8 +2262,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Radioterapia</name>
-        <rename>Radioterapia</rename>
+        <name>radioterapia</name>
+        <rename>radioterapia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2291,8 +2279,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Reumatologia</name>
-        <rename>Reumatologia</rename>
+        <name>reumatologia</name>
+        <rename>reumatologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2308,8 +2296,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Urologia</name>
-        <rename>Urologia</rename>
+        <name>urologia</name>
+        <rename>urologia</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2325,8 +2313,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>EspecialidadesCirurgicas</name>
-        <rename>EspecialidadesCirurgicas</rename>
+        <name>especialidadescirurgicas</name>
+        <rename>especialidadescirurgicas</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2342,8 +2330,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>SAO</name>
-        <rename>SAO</rename>
+        <name>sao</name>
+        <rename>sao</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -2401,2527 +2389,16 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>CFMLocal</connection>
+    <connection>CFMLocalPostgres</connection>
     <sql>SELECT *
-FROM MedicosEmAtividade A
-WHERE A.id NOT IN (SELECT IdMedico FROM ValidaDuplicidadeSexoFinal)
-AND   A.id NOT IN (SELECT IdMedico FROM ValidaDuplicidadeDtNascimentoFinal)
-AND   A.Idade &lt;= 85</sql>
+FROM stage.medicosematividade A
+WHERE CAST(A.id AS TEXT) NOT IN (SELECT IdMedico  FROM auditoria.tblmedicossexosduplicados)
+AND   CAST(A.id AS TEXT) NOT IN (SELECT IdMedico FROM auditoria.tblmedicosdtnascimentoduplicados)</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
     <variables_active>N</variables_active>
     <lazy_conversion_active>N</lazy_conversion_active>
-    <cached_row_meta_active>N</cached_row_meta_active>
-    <row-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>id</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>id</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>crm</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>crm</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Timestamp</type>
-        <storagetype>normal</storagetype>
-        <name>DataInscricaoCRM</name>
-        <length>0</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>DataInscricaoCRM</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>TipoDeCRM</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>TipoDeCRM</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>ContagemDoCRm</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>ContagemDoCRm</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>SituacaoDetalhada</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>SituacaoDetalhada</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>SituacaoGeral</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>SituacaoGeral</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>UfDeInscricao</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>UfDeInscricao</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Municipio</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Municipio</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>EstratoMunicipio</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>EstratoMunicipio</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>ClasseMunicipio</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>ClasseMunicipio</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>CapitalInterior</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>CapitalInterior</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>RegiaoInscricao</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>RegiaoInscricao</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Timestamp</type>
-        <storagetype>normal</storagetype>
-        <name>DataNascimento</name>
-        <length>0</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>DataNascimento</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>Idade</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>Idade</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>IdadeCatUm</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>IdadeCatUm</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>IdadeCatDois</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>IdadeCatDois</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>Sexo</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>Sexo</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>Sexo_1</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>Sexo_1</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>MunicipioDeNaturalidade</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>MunicipioDeNaturalidade</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MunicipioDeNaturalidade_1</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MunicipioDeNaturalidade_1</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>UfDeNaturalidade</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>UfDeNaturalidade</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>UfDeNaturalidade_1</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>UfDeNaturalidade_1</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>RegiaoDeNaturalidade</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>RegiaoDeNaturalidade</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>Pais</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>Pais</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>Escola</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>Escola</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>UniversidadeOrigem</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>UniversidadeOrigem</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>NaturezaJuridicaEscolaMedica</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>NaturezaJuridicaEscolaMedica</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>MunicipioEscolaMedica</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>MunicipioEscolaMedica</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MunicipioEscolaMedica_1</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MunicipioEscolaMedica_1</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>UfDaEscolaMedica</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>UfDaEscolaMedica</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>DataFormatura</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>DataFormatura</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>TempoDeFormado</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>TempoDeFormado</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>DataSituacaoDetalhada</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>DataSituacaoDetalhada</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MunicipioResidencia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MunicipioResidencia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CEPResidencia</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>CEPResidencia</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>UfDeResidencia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>UfDeResidencia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MunicipioResidencia_1</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MunicipioResidencia_1</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>MunicipioComercial</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>MunicipioComercial</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>CEPMunicipioComercial</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>CEPMunicipioComercial</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>UfComercial</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>UfComercial</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MunicipioComercial_1</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MunicipioComercial_1</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>MunicipioDeCorrespondencia</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>MunicipioDeCorrespondencia</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>CEPDeCorrespondecia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>CEPDeCorrespondecia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>UfDeCorrespondecia</name>
-        <length>200</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>UfDeCorrespondecia</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>ProgramaResidenciaEmCurso</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>ProgramaResidenciaEmCurso</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>PrimeiraResidencia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>PrimeiraResidencia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>SegundaResidencia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>SegundaResidencia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>TerceiraResidencia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>TerceiraResidencia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>QuartaResidencia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>QuartaResidencia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Especialidade</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Especialidade</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Acupuntura</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Acupuntura</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>AlergiaImunologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>AlergiaImunologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Anestesiologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Anestesiologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Angiologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Angiologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Cardiologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Cardiologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>CirurgiaCardiovascular</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>CirurgiaCardiovascular</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>CirurgiadaMao</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>CirurgiadaMao</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>CirurgiadeCabecaePescoco</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>CirurgiadeCabecaePescoco</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>CirurgiadoAparelhoDigestivo</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>CirurgiadoAparelhoDigestivo</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>CirurgiaGeral</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>CirurgiaGeral</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>CirurgiaOncologica</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>CirurgiaOncologica</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>CirurgiaPediatrica</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>CirurgiaPediatrica</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>CirurgiaPlastica</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>CirurgiaPlastica</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>CirurgiaToracia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>CirurgiaToracia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>CirurgiaVascular</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>CirurgiaVascular</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>ClinicaMédica</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>ClinicaMédica</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Coloproctologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Coloproctologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Dermatologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Dermatologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>EndocrinologiaeMetabologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>EndocrinologiaeMetabologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Endoscopia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Endoscopia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Gastroenterologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Gastroenterologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>GeneticaMedica</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>GeneticaMedica</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Geriatria</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Geriatria</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>GinecologiaeObstetricia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>GinecologiaeObstetricia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>HematologiaeHemoterapia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>HematologiaeHemoterapia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Homeopatia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Homeopatia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Infectologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Infectologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Mastologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Mastologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MedicinadeEmergência</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MedicinadeEmergência</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MedicinaDeFamiliaeComunidade</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MedicinaDeFamiliaeComunidade</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MedicinaDoTrabalho</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MedicinaDoTrabalho</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MedicinadeTrafego</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MedicinadeTrafego</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MedicinaEsportiva</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MedicinaEsportiva</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MedicinaFisicaeReabilitacao</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MedicinaFisicaeReabilitacao</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MedicinaIntensiva</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MedicinaIntensiva</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MedicinaLegalEPericiaMedica</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MedicinaLegalEPericiaMedica</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MedicinaNuclear</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MedicinaNuclear</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>MedicinaPreventivaESocial</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>MedicinaPreventivaESocial</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Nefrologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Nefrologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Neurocirurgia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Neurocirurgia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Neurologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Neurologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Nutrologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Nutrologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Oftalmologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Oftalmologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>OncologiaClinica</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>OncologiaClinica</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>OrtopediaETraumatologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>OrtopediaETraumatologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Otorrinolaringologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Otorrinolaringologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Patologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Patologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>PatologiaClinicaMedicinaLaboratorial</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>PatologiaClinicaMedicinaLaboratorial</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Pediatria</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Pediatria</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Pneumologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Pneumologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Psiquiatria</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Psiquiatria</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>RadiologiaDiagnosticoPorImagem</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>RadiologiaDiagnosticoPorImagem</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Radioterapia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Radioterapia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Reumatologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Reumatologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>Urologia</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>Urologia</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>EspecialidadesCirurgicas</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>EspecialidadesCirurgicas</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>SAO</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>SAO</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>total_tit</name>
-        <length>15</length>
-        <precision>0</precision>
-        <origin>Table input</origin>
-        <comments>total_tit</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>pt_BR</date_format_locale>
-        <date_format_timezone>America/Sao_Paulo</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-    </row-meta>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -4947,9 +2424,9 @@ AND   A.Idade &lt;= 85</sql>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>CFMLocal</connection>
-    <schema/>
-    <table>StgMedicosEmAtividade</table>
+    <connection>CFMLocalPostgres</connection>
+    <schema>stage</schema>
+    <table>stgmedicosematividade</table>
     <commit>1000</commit>
     <truncate>Y</truncate>
     <ignore_errors>N</ignore_errors>
@@ -4974,428 +2451,428 @@ AND   A.Idade &lt;= 85</sql>
         <stream_name>crm</stream_name>
       </field>
       <field>
-        <column_name>DataInscricaoCRM</column_name>
-        <stream_name>DataInscricaoCRM</stream_name>
+        <column_name>datainscricaocrm</column_name>
+        <stream_name>datainscricaocrm</stream_name>
       </field>
       <field>
-        <column_name>TipoDeCRM</column_name>
-        <stream_name>TipoDeCRM</stream_name>
+        <column_name>tipodecrm</column_name>
+        <stream_name>tipodecrm</stream_name>
       </field>
       <field>
-        <column_name>ContagemDoCRm</column_name>
-        <stream_name>ContagemDoCRm</stream_name>
+        <column_name>contagemdocrm</column_name>
+        <stream_name>contagemdocrm</stream_name>
       </field>
       <field>
-        <column_name>SituacaoDetalhada</column_name>
-        <stream_name>SituacaoDetalhada</stream_name>
+        <column_name>situacaodetalhada</column_name>
+        <stream_name>situacaodetalhada</stream_name>
       </field>
       <field>
-        <column_name>SituacaoGeral</column_name>
-        <stream_name>SituacaoGeral</stream_name>
+        <column_name>situacaogeral</column_name>
+        <stream_name>situacaogeral</stream_name>
       </field>
       <field>
-        <column_name>UfDeInscricao</column_name>
-        <stream_name>UfDeInscricao</stream_name>
+        <column_name>ufdeinscricao</column_name>
+        <stream_name>ufdeinscricao</stream_name>
       </field>
       <field>
-        <column_name>Municipio</column_name>
-        <stream_name>Municipio</stream_name>
+        <column_name>municipio</column_name>
+        <stream_name>municipio</stream_name>
       </field>
       <field>
-        <column_name>EstratoMunicipio</column_name>
-        <stream_name>EstratoMunicipio</stream_name>
+        <column_name>estratomunicipio</column_name>
+        <stream_name>estratomunicipio</stream_name>
       </field>
       <field>
-        <column_name>ClasseMunicipio</column_name>
-        <stream_name>ClasseMunicipio</stream_name>
+        <column_name>classemunicipio</column_name>
+        <stream_name>classemunicipio</stream_name>
       </field>
       <field>
-        <column_name>CapitalInterior</column_name>
-        <stream_name>CapitalInterior</stream_name>
+        <column_name>capitalinterior</column_name>
+        <stream_name>capitalinterior</stream_name>
       </field>
       <field>
-        <column_name>RegiaoInscricao</column_name>
-        <stream_name>RegiaoInscricao</stream_name>
+        <column_name>regiaoinscricao</column_name>
+        <stream_name>regiaoinscricao</stream_name>
       </field>
       <field>
-        <column_name>DataNascimento</column_name>
-        <stream_name>DataNascimento</stream_name>
+        <column_name>datanascimento</column_name>
+        <stream_name>datanascimento</stream_name>
       </field>
       <field>
-        <column_name>Idade</column_name>
-        <stream_name>Idade</stream_name>
+        <column_name>idade</column_name>
+        <stream_name>idade</stream_name>
       </field>
       <field>
-        <column_name>IdadeCatUm</column_name>
-        <stream_name>IdadeCatUm</stream_name>
+        <column_name>idadecatum</column_name>
+        <stream_name>idadecatum</stream_name>
       </field>
       <field>
-        <column_name>IdadeCatDois</column_name>
-        <stream_name>IdadeCatDois</stream_name>
+        <column_name>idadecatdois</column_name>
+        <stream_name>idadecatdois</stream_name>
       </field>
       <field>
-        <column_name>Sexo</column_name>
-        <stream_name>Sexo</stream_name>
+        <column_name>sexo</column_name>
+        <stream_name>sexo</stream_name>
       </field>
       <field>
-        <column_name>Sexo_1</column_name>
-        <stream_name>Sexo_1</stream_name>
+        <column_name>sexodescricao</column_name>
+        <stream_name>sexodescricao</stream_name>
       </field>
       <field>
-        <column_name>MunicipioDeNaturalidade</column_name>
-        <stream_name>MunicipioDeNaturalidade</stream_name>
+        <column_name>municipiodenaturalidadedesc</column_name>
+        <stream_name>municipiodenaturalidadedesc</stream_name>
       </field>
       <field>
-        <column_name>MunicipioDeNaturalidade_1</column_name>
-        <stream_name>MunicipioDeNaturalidade_1</stream_name>
+        <column_name>municipiodenaturalidade</column_name>
+        <stream_name>municipiodenaturalidade</stream_name>
       </field>
       <field>
-        <column_name>UfDeNaturalidade</column_name>
-        <stream_name>UfDeNaturalidade</stream_name>
+        <column_name>ufdenaturalidade</column_name>
+        <stream_name>ufdenaturalidade</stream_name>
       </field>
       <field>
-        <column_name>UfDeNaturalidade_1</column_name>
-        <stream_name>UfDeNaturalidade_1</stream_name>
+        <column_name>ufdenaturalidadedesc</column_name>
+        <stream_name>ufdenaturalidadedesc</stream_name>
       </field>
       <field>
-        <column_name>RegiaoDeNaturalidade</column_name>
-        <stream_name>RegiaoDeNaturalidade</stream_name>
+        <column_name>regiaodenaturalidade</column_name>
+        <stream_name>regiaodenaturalidade</stream_name>
       </field>
       <field>
-        <column_name>Pais</column_name>
-        <stream_name>Pais</stream_name>
+        <column_name>pais</column_name>
+        <stream_name>pais</stream_name>
       </field>
       <field>
-        <column_name>Escola</column_name>
-        <stream_name>Escola</stream_name>
+        <column_name>escola</column_name>
+        <stream_name>escola</stream_name>
       </field>
       <field>
-        <column_name>UniversidadeOrigem</column_name>
-        <stream_name>UniversidadeOrigem</stream_name>
+        <column_name>universidadeorigem</column_name>
+        <stream_name>universidadeorigem</stream_name>
       </field>
       <field>
-        <column_name>NaturezaJuridicaEscolaMedica</column_name>
-        <stream_name>NaturezaJuridicaEscolaMedica</stream_name>
+        <column_name>naturezajuridicaescolamedica</column_name>
+        <stream_name>naturezajuridicaescolamedica</stream_name>
       </field>
       <field>
-        <column_name>MunicipioEscolaMedica</column_name>
-        <stream_name>MunicipioEscolaMedica</stream_name>
+        <column_name>municipioescolamedicadesc</column_name>
+        <stream_name>municipioescolamedicadesc</stream_name>
       </field>
       <field>
-        <column_name>MunicipioEscolaMedica_1</column_name>
-        <stream_name>MunicipioEscolaMedica_1</stream_name>
+        <column_name>municipioescolamedica</column_name>
+        <stream_name>municipioescolamedica</stream_name>
       </field>
       <field>
-        <column_name>UfDaEscolaMedica</column_name>
-        <stream_name>UfDaEscolaMedica</stream_name>
+        <column_name>ufdaescolamedica</column_name>
+        <stream_name>ufdaescolamedica</stream_name>
       </field>
       <field>
-        <column_name>DataFormatura</column_name>
-        <stream_name>DataFormatura</stream_name>
+        <column_name>dataformatura</column_name>
+        <stream_name>dataformatura</stream_name>
       </field>
       <field>
-        <column_name>TempoDeFormado</column_name>
-        <stream_name>TempoDeFormado</stream_name>
+        <column_name>tempodeformado</column_name>
+        <stream_name>tempodeformado</stream_name>
       </field>
       <field>
-        <column_name>DataSituacaoDetalhada</column_name>
-        <stream_name>DataSituacaoDetalhada</stream_name>
+        <column_name>datasituacaodetalhada</column_name>
+        <stream_name>datasituacaodetalhada</stream_name>
       </field>
       <field>
-        <column_name>MunicipioResidencia</column_name>
-        <stream_name>MunicipioResidencia</stream_name>
+        <column_name>municipioresidencia</column_name>
+        <stream_name>municipioresidencia</stream_name>
       </field>
       <field>
-        <column_name>CEPResidencia</column_name>
-        <stream_name>CEPResidencia</stream_name>
+        <column_name>cepresidencia</column_name>
+        <stream_name>cepresidencia</stream_name>
       </field>
       <field>
-        <column_name>UfDeResidencia</column_name>
-        <stream_name>UfDeResidencia</stream_name>
+        <column_name>ufderesidencia</column_name>
+        <stream_name>ufderesidencia</stream_name>
       </field>
       <field>
-        <column_name>MunicipioResidencia_1</column_name>
-        <stream_name>MunicipioResidencia_1</stream_name>
+        <column_name>municipioresidenciadesc</column_name>
+        <stream_name>municipioresidenciadesc</stream_name>
       </field>
       <field>
-        <column_name>MunicipioComercial</column_name>
-        <stream_name>MunicipioComercial</stream_name>
+        <column_name>municipiocomercialdesc</column_name>
+        <stream_name>municipiocomercialdesc</stream_name>
       </field>
       <field>
-        <column_name>CEPMunicipioComercial</column_name>
-        <stream_name>CEPMunicipioComercial</stream_name>
+        <column_name>cepmunicipiocomercial</column_name>
+        <stream_name>cepmunicipiocomercial</stream_name>
       </field>
       <field>
-        <column_name>UfComercial</column_name>
-        <stream_name>UfComercial</stream_name>
+        <column_name>ufcomercial</column_name>
+        <stream_name>ufcomercial</stream_name>
       </field>
       <field>
-        <column_name>MunicipioComercial_1</column_name>
-        <stream_name>MunicipioComercial_1</stream_name>
+        <column_name>municipiocomercial</column_name>
+        <stream_name>municipiocomercial</stream_name>
       </field>
       <field>
-        <column_name>MunicipioDeCorrespondencia</column_name>
-        <stream_name>MunicipioDeCorrespondencia</stream_name>
+        <column_name>municipiodecorrespondencia</column_name>
+        <stream_name>municipiodecorrespondencia</stream_name>
       </field>
       <field>
-        <column_name>CEPDeCorrespondecia</column_name>
-        <stream_name>CEPDeCorrespondecia</stream_name>
+        <column_name>cepdecorrespondecia</column_name>
+        <stream_name>cepdecorrespondecia</stream_name>
       </field>
       <field>
-        <column_name>UfDeCorrespondecia</column_name>
-        <stream_name>UfDeCorrespondecia</stream_name>
+        <column_name>ufdecorrespondecia</column_name>
+        <stream_name>ufdecorrespondecia</stream_name>
       </field>
       <field>
-        <column_name>ProgramaResidenciaEmCurso</column_name>
-        <stream_name>ProgramaResidenciaEmCurso</stream_name>
+        <column_name>programaresidenciaemcurso</column_name>
+        <stream_name>programaresidenciaemcurso</stream_name>
       </field>
       <field>
-        <column_name>PrimeiraResidencia</column_name>
-        <stream_name>PrimeiraResidencia</stream_name>
+        <column_name>primeiraresidencia</column_name>
+        <stream_name>primeiraresidencia</stream_name>
       </field>
       <field>
-        <column_name>SegundaResidencia</column_name>
-        <stream_name>SegundaResidencia</stream_name>
+        <column_name>segundaresidencia</column_name>
+        <stream_name>segundaresidencia</stream_name>
       </field>
       <field>
-        <column_name>TerceiraResidencia</column_name>
-        <stream_name>TerceiraResidencia</stream_name>
+        <column_name>terceiraresidencia</column_name>
+        <stream_name>terceiraresidencia</stream_name>
       </field>
       <field>
-        <column_name>QuartaResidencia</column_name>
-        <stream_name>QuartaResidencia</stream_name>
+        <column_name>quartaresidencia</column_name>
+        <stream_name>quartaresidencia</stream_name>
       </field>
       <field>
-        <column_name>Especialidade</column_name>
-        <stream_name>Especialidade</stream_name>
+        <column_name>especialidade</column_name>
+        <stream_name>especialidade</stream_name>
       </field>
       <field>
-        <column_name>Acupuntura</column_name>
-        <stream_name>Acupuntura</stream_name>
+        <column_name>acupuntura</column_name>
+        <stream_name>acupuntura</stream_name>
       </field>
       <field>
-        <column_name>AlergiaImunologia</column_name>
-        <stream_name>AlergiaImunologia</stream_name>
+        <column_name>alergiaimunologia</column_name>
+        <stream_name>alergiaimunologia</stream_name>
       </field>
       <field>
-        <column_name>Anestesiologia</column_name>
-        <stream_name>Anestesiologia</stream_name>
+        <column_name>anestesiologia</column_name>
+        <stream_name>anestesiologia</stream_name>
       </field>
       <field>
-        <column_name>Angiologia</column_name>
-        <stream_name>Angiologia</stream_name>
+        <column_name>angiologia</column_name>
+        <stream_name>angiologia</stream_name>
       </field>
       <field>
-        <column_name>Cardiologia</column_name>
-        <stream_name>Cardiologia</stream_name>
+        <column_name>cardiologia</column_name>
+        <stream_name>cardiologia</stream_name>
       </field>
       <field>
-        <column_name>CirurgiaCardiovascular</column_name>
-        <stream_name>CirurgiaCardiovascular</stream_name>
+        <column_name>cirurgiacardiovascular</column_name>
+        <stream_name>cirurgiacardiovascular</stream_name>
       </field>
       <field>
-        <column_name>CirurgiadaMao</column_name>
-        <stream_name>CirurgiadaMao</stream_name>
+        <column_name>cirurgiadamao</column_name>
+        <stream_name>cirurgiadamao</stream_name>
       </field>
       <field>
-        <column_name>CirurgiadeCabecaePescoco</column_name>
-        <stream_name>CirurgiadeCabecaePescoco</stream_name>
+        <column_name>cirurgiadecabecaepescoco</column_name>
+        <stream_name>cirurgiadecabecaepescoco</stream_name>
       </field>
       <field>
-        <column_name>CirurgiadoAparelhoDigestivo</column_name>
-        <stream_name>CirurgiadoAparelhoDigestivo</stream_name>
+        <column_name>cirurgiadoaparelhodigestivo</column_name>
+        <stream_name>cirurgiadoaparelhodigestivo</stream_name>
       </field>
       <field>
-        <column_name>CirurgiaGeral</column_name>
-        <stream_name>CirurgiaGeral</stream_name>
+        <column_name>cirurgiageral</column_name>
+        <stream_name>cirurgiageral</stream_name>
       </field>
       <field>
-        <column_name>CirurgiaOncologica</column_name>
-        <stream_name>CirurgiaOncologica</stream_name>
+        <column_name>cirurgiaoncologica</column_name>
+        <stream_name>cirurgiaoncologica</stream_name>
       </field>
       <field>
-        <column_name>CirurgiaPediatrica</column_name>
-        <stream_name>CirurgiaPediatrica</stream_name>
+        <column_name>cirurgiapediatrica</column_name>
+        <stream_name>cirurgiapediatrica</stream_name>
       </field>
       <field>
-        <column_name>CirurgiaPlastica</column_name>
-        <stream_name>CirurgiaPlastica</stream_name>
+        <column_name>cirurgiaplastica</column_name>
+        <stream_name>cirurgiaplastica</stream_name>
       </field>
       <field>
-        <column_name>CirurgiaToracia</column_name>
-        <stream_name>CirurgiaToracia</stream_name>
+        <column_name>cirurgiatoracia</column_name>
+        <stream_name>cirurgiatoracia</stream_name>
       </field>
       <field>
-        <column_name>CirurgiaVascular</column_name>
-        <stream_name>CirurgiaVascular</stream_name>
+        <column_name>cirurgiavascular</column_name>
+        <stream_name>cirurgiavascular</stream_name>
       </field>
       <field>
-        <column_name>ClinicaMédica</column_name>
-        <stream_name>ClinicaMédica</stream_name>
+        <column_name>clinicamédica</column_name>
+        <stream_name>clinicamédica</stream_name>
       </field>
       <field>
-        <column_name>Coloproctologia</column_name>
-        <stream_name>Coloproctologia</stream_name>
+        <column_name>coloproctologia</column_name>
+        <stream_name>coloproctologia</stream_name>
       </field>
       <field>
-        <column_name>Dermatologia</column_name>
-        <stream_name>Dermatologia</stream_name>
+        <column_name>dermatologia</column_name>
+        <stream_name>dermatologia</stream_name>
       </field>
       <field>
-        <column_name>EndocrinologiaeMetabologia</column_name>
-        <stream_name>EndocrinologiaeMetabologia</stream_name>
+        <column_name>endocrinologiaemetabologia</column_name>
+        <stream_name>endocrinologiaemetabologia</stream_name>
       </field>
       <field>
-        <column_name>Endoscopia</column_name>
-        <stream_name>Endoscopia</stream_name>
+        <column_name>endoscopia</column_name>
+        <stream_name>endoscopia</stream_name>
       </field>
       <field>
-        <column_name>Gastroenterologia</column_name>
-        <stream_name>Gastroenterologia</stream_name>
+        <column_name>gastroenterologia</column_name>
+        <stream_name>gastroenterologia</stream_name>
       </field>
       <field>
-        <column_name>GeneticaMedica</column_name>
-        <stream_name>GeneticaMedica</stream_name>
+        <column_name>geneticamedica</column_name>
+        <stream_name>geneticamedica</stream_name>
       </field>
       <field>
-        <column_name>Geriatria</column_name>
-        <stream_name>Geriatria</stream_name>
+        <column_name>geriatria</column_name>
+        <stream_name>geriatria</stream_name>
       </field>
       <field>
-        <column_name>GinecologiaeObstetricia</column_name>
-        <stream_name>GinecologiaeObstetricia</stream_name>
+        <column_name>ginecologiaeobstetricia</column_name>
+        <stream_name>ginecologiaeobstetricia</stream_name>
       </field>
       <field>
-        <column_name>HematologiaeHemoterapia</column_name>
-        <stream_name>HematologiaeHemoterapia</stream_name>
+        <column_name>hematologiaehemoterapia</column_name>
+        <stream_name>hematologiaehemoterapia</stream_name>
       </field>
       <field>
-        <column_name>Homeopatia</column_name>
-        <stream_name>Homeopatia</stream_name>
+        <column_name>homeopatia</column_name>
+        <stream_name>homeopatia</stream_name>
       </field>
       <field>
-        <column_name>Infectologia</column_name>
-        <stream_name>Infectologia</stream_name>
+        <column_name>infectologia</column_name>
+        <stream_name>infectologia</stream_name>
       </field>
       <field>
-        <column_name>Mastologia</column_name>
-        <stream_name>Mastologia</stream_name>
+        <column_name>mastologia</column_name>
+        <stream_name>mastologia</stream_name>
       </field>
       <field>
-        <column_name>MedicinadeEmergência</column_name>
-        <stream_name>MedicinadeEmergência</stream_name>
+        <column_name>medicinadeemergência</column_name>
+        <stream_name>medicinadeemergência</stream_name>
       </field>
       <field>
-        <column_name>MedicinaDeFamiliaeComunidade</column_name>
-        <stream_name>MedicinaDeFamiliaeComunidade</stream_name>
+        <column_name>medicinadefamiliaecomunidade</column_name>
+        <stream_name>medicinadefamiliaecomunidade</stream_name>
       </field>
       <field>
-        <column_name>MedicinaDoTrabalho</column_name>
-        <stream_name>MedicinaDoTrabalho</stream_name>
+        <column_name>medicinadotrabalho</column_name>
+        <stream_name>medicinadotrabalho</stream_name>
       </field>
       <field>
-        <column_name>MedicinadeTrafego</column_name>
-        <stream_name>MedicinadeTrafego</stream_name>
+        <column_name>medicinadetrafego</column_name>
+        <stream_name>medicinadetrafego</stream_name>
       </field>
       <field>
-        <column_name>MedicinaEsportiva</column_name>
-        <stream_name>MedicinaEsportiva</stream_name>
+        <column_name>medicinaesportiva</column_name>
+        <stream_name>medicinaesportiva</stream_name>
       </field>
       <field>
-        <column_name>MedicinaFisicaeReabilitacao</column_name>
-        <stream_name>MedicinaFisicaeReabilitacao</stream_name>
+        <column_name>medicinafisicaereabilitacao</column_name>
+        <stream_name>medicinafisicaereabilitacao</stream_name>
       </field>
       <field>
-        <column_name>MedicinaIntensiva</column_name>
-        <stream_name>MedicinaIntensiva</stream_name>
+        <column_name>medicinaintensiva</column_name>
+        <stream_name>medicinaintensiva</stream_name>
       </field>
       <field>
-        <column_name>MedicinaLegalEPericiaMedica</column_name>
-        <stream_name>MedicinaLegalEPericiaMedica</stream_name>
+        <column_name>medicinalegalepericiamedica</column_name>
+        <stream_name>medicinalegalepericiamedica</stream_name>
       </field>
       <field>
-        <column_name>MedicinaNuclear</column_name>
-        <stream_name>MedicinaNuclear</stream_name>
+        <column_name>medicinanuclear</column_name>
+        <stream_name>medicinanuclear</stream_name>
       </field>
       <field>
-        <column_name>MedicinaPreventivaESocial</column_name>
-        <stream_name>MedicinaPreventivaESocial</stream_name>
+        <column_name>medicinapreventivaesocial</column_name>
+        <stream_name>medicinapreventivaesocial</stream_name>
       </field>
       <field>
-        <column_name>Nefrologia</column_name>
-        <stream_name>Nefrologia</stream_name>
+        <column_name>nefrologia</column_name>
+        <stream_name>nefrologia</stream_name>
       </field>
       <field>
-        <column_name>Neurocirurgia</column_name>
-        <stream_name>Neurocirurgia</stream_name>
+        <column_name>neurocirurgia</column_name>
+        <stream_name>neurocirurgia</stream_name>
       </field>
       <field>
-        <column_name>Neurologia</column_name>
-        <stream_name>Neurologia</stream_name>
+        <column_name>neurologia</column_name>
+        <stream_name>neurologia</stream_name>
       </field>
       <field>
-        <column_name>Nutrologia</column_name>
-        <stream_name>Nutrologia</stream_name>
+        <column_name>nutrologia</column_name>
+        <stream_name>nutrologia</stream_name>
       </field>
       <field>
-        <column_name>Oftalmologia</column_name>
-        <stream_name>Oftalmologia</stream_name>
+        <column_name>oftalmologia</column_name>
+        <stream_name>oftalmologia</stream_name>
       </field>
       <field>
-        <column_name>OncologiaClinica</column_name>
-        <stream_name>OncologiaClinica</stream_name>
+        <column_name>oncologiaclinica</column_name>
+        <stream_name>oncologiaclinica</stream_name>
       </field>
       <field>
-        <column_name>OrtopediaETraumatologia</column_name>
-        <stream_name>OrtopediaETraumatologia</stream_name>
+        <column_name>ortopediaetraumatologia</column_name>
+        <stream_name>ortopediaetraumatologia</stream_name>
       </field>
       <field>
-        <column_name>Otorrinolaringologia</column_name>
-        <stream_name>Otorrinolaringologia</stream_name>
+        <column_name>otorrinolaringologia</column_name>
+        <stream_name>otorrinolaringologia</stream_name>
       </field>
       <field>
-        <column_name>Patologia</column_name>
-        <stream_name>Patologia</stream_name>
+        <column_name>patologia</column_name>
+        <stream_name>patologia</stream_name>
       </field>
       <field>
-        <column_name>PatologiaClinicaMedicinaLaboratorial</column_name>
-        <stream_name>PatologiaClinicaMedicinaLaboratorial</stream_name>
+        <column_name>patologiaclinicamedicinalaboratorial</column_name>
+        <stream_name>patologiaclinicamedicinalaboratorial</stream_name>
       </field>
       <field>
-        <column_name>Pediatria</column_name>
-        <stream_name>Pediatria</stream_name>
+        <column_name>pediatria</column_name>
+        <stream_name>pediatria</stream_name>
       </field>
       <field>
-        <column_name>Pneumologia</column_name>
-        <stream_name>Pneumologia</stream_name>
+        <column_name>pneumologia</column_name>
+        <stream_name>pneumologia</stream_name>
       </field>
       <field>
-        <column_name>Psiquiatria</column_name>
-        <stream_name>Psiquiatria</stream_name>
+        <column_name>psiquiatria</column_name>
+        <stream_name>psiquiatria</stream_name>
       </field>
       <field>
-        <column_name>RadiologiaDiagnosticoPorImagem</column_name>
-        <stream_name>RadiologiaDiagnosticoPorImagem</stream_name>
+        <column_name>radiologiadiagnosticoporimagem</column_name>
+        <stream_name>radiologiadiagnosticoporimagem</stream_name>
       </field>
       <field>
-        <column_name>Radioterapia</column_name>
-        <stream_name>Radioterapia</stream_name>
+        <column_name>radioterapia</column_name>
+        <stream_name>radioterapia</stream_name>
       </field>
       <field>
-        <column_name>Reumatologia</column_name>
-        <stream_name>Reumatologia</stream_name>
+        <column_name>reumatologia</column_name>
+        <stream_name>reumatologia</stream_name>
       </field>
       <field>
-        <column_name>Urologia</column_name>
-        <stream_name>Urologia</stream_name>
+        <column_name>urologia</column_name>
+        <stream_name>urologia</stream_name>
       </field>
       <field>
-        <column_name>EspecialidadesCirurgicas</column_name>
-        <stream_name>EspecialidadesCirurgicas</stream_name>
+        <column_name>especialidadescirurgicas</column_name>
+        <stream_name>especialidadescirurgicas</stream_name>
       </field>
       <field>
-        <column_name>SAO</column_name>
-        <stream_name>SAO</stream_name>
+        <column_name>sao</column_name>
+        <stream_name>sao</stream_name>
       </field>
       <field>
         <column_name>total_tit</column_name>
