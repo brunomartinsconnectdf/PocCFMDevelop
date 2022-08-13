@@ -7,72 +7,9 @@
   <created_user>-</created_user>
   <created_date>2022/08/02 16:40:43.275</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2022/08/12 22:38:44.263</modified_date>
+  <modified_date>2022/08/13 02:04:39.046</modified_date>
   <parameters>
     </parameters>
-  <connection>
-    <name>CFMLocal</name>
-    <server>localhost</server>
-    <type>MYSQL</type>
-    <access>Native</access>
-    <database>stagecfm</database>
-    <port>3306</port>
-    <username>root</username>
-    <password>Encrypted </password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute>
-        <code>EXTRA_OPTION_MYSQL.defaultFetchSize</code>
-        <attribute>500</attribute>
-      </attribute>
-      <attribute>
-        <code>EXTRA_OPTION_MYSQL.useCursorFetch</code>
-        <attribute>true</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>IS_CLUSTERED</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>PORT_NUMBER</code>
-        <attribute>3306</attribute>
-      </attribute>
-      <attribute>
-        <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>QUOTE_ALL_FIELDS</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>STREAM_RESULTS</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>USE_POOLING</code>
-        <attribute>N</attribute>
-      </attribute>
-    </attributes>
-  </connection>
   <slaveservers>
     </slaveservers>
   <job-log-table>
@@ -371,24 +308,6 @@
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>MedicoEmAtividadeSitDetalhada</name>
-      <description/>
-      <type>SQL</type>
-      <attributes/>
-      <sql>DROP TABLE DimMedicos;</sql>
-      <useVariableSubstitution>F</useVariableSubstitution>
-      <sqlfromfile>F</sqlfromfile>
-      <sqlfilename/>
-      <sendOneStatement>F</sendOneStatement>
-      <connection>CFMLocal</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>208</xloc>
-      <yloc>16</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
       <name>Success</name>
       <description/>
       <type>SUCCESS</type>
@@ -400,65 +319,8 @@
       <yloc>128</yloc>
       <attributes_kjc/>
     </entry>
-    <entry>
-      <name>MedicoEmAtividadeSitDetalhada 2</name>
-      <description/>
-      <type>SQL</type>
-      <attributes/>
-      <sql>CREATE TABLE DimMedicos AS (
-SELECT
-       id
-     , DataNascimento
-     , YEAR(CURDATE()) - YEAR(CAST(DataNascimento AS DATE))
-     , total_tit
-     , Count(ContagemDoCRm)
-     , Sexo
-     , STR_TO_DATE(DataFormatura, '%m/%d/%Y')
-     , YEAR(CURDATE()) - YEAR(STR_TO_DATE(DataFormatura, '%m/%d/%Y'))
-FROM stagecfm.stgmedicosematividade A
-GROUP BY id, DataNascimento, total_tit, Sexo, DataFormatura
-ORDER BY id)</sql>
-      <useVariableSubstitution>F</useVariableSubstitution>
-      <sqlfromfile>F</sqlfromfile>
-      <sqlfilename/>
-      <sendOneStatement>F</sendOneStatement>
-      <connection>CFMLocal</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>208</xloc>
-      <yloc>128</yloc>
-      <attributes_kjc/>
-    </entry>
   </entries>
   <hops>
-    <hop>
-      <from>Start</from>
-      <to>MedicoEmAtividadeSitDetalhada</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>Y</unconditional>
-    </hop>
-    <hop>
-      <from>MedicoEmAtividadeSitDetalhada</from>
-      <to>MedicoEmAtividadeSitDetalhada 2</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>MedicoEmAtividadeSitDetalhada 2</from>
-      <to>Success</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
   </hops>
   <notepads>
   </notepads>
