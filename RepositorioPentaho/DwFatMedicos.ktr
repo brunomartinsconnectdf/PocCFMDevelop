@@ -1,6 +1,6 @@
 <transformation>
   <info>
-    <name>UpdateDimMedicosRegistrosCRM</name>
+    <name>DwFatMedicos</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -428,7 +428,7 @@
     <created_user>-</created_user>
     <created_date>2022/08/02 11:55:59.418</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2022/08/13 13:14:36.832</modified_date>
+    <modified_date>2022/08/13 02:46:50.984</modified_date>
     <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
@@ -493,7 +493,7 @@
     </hop>
     <hop>
       <from>Select values</from>
-      <to>Update</to>
+      <to>Text file output</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -511,8 +511,8 @@
     <fields>
       <select_unspecified>N</select_unspecified>
       <meta>
-        <name>idmedicos</name>
-        <rename>idmedicos</rename>
+        <name>idffatmedicos</name>
+        <rename>idffatmedicos</rename>
         <type>None</type>
         <length>15</length>
         <precision>0</precision>
@@ -528,10 +528,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>registroscrm</name>
-        <rename>registroscrm</rename>
+        <name>idfdimmedicos</name>
+        <rename>idfdimmedicos</rename>
         <type>None</type>
-        <length>15</length>
+        <length>9</length>
         <precision>0</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -554,7 +554,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>224</xloc>
+      <xloc>256</xloc>
       <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
@@ -571,11 +571,8 @@
       <schema_name/>
     </partitioning>
     <connection>CFMLocalPostgres</connection>
-    <sql>SELECT
-     id AS idmedicos
-    ,Count(ContagemDoCRm) AS RegistrosCRM
-FROM stage.stgmedicosematividade
-GROUP BY id</sql>
+    <sql>SELECT *
+FROM dw.fatmedicos;</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -596,8 +593,8 @@ GROUP BY id</sql>
     </GUI>
   </step>
   <step>
-    <name>Update</name>
-    <type>Update</type>
+    <name>Text file output</name>
+    <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -606,26 +603,62 @@ GROUP BY id</sql>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>CFMLocalPostgres</connection>
-    <skip_lookup>Y</skip_lookup>
-    <commit>100</commit>
-    <use_batch>Y</use_batch>
-    <error_ignored>N</error_ignored>
-    <ignore_flag_field/>
-    <lookup>
-      <schema>dw</schema>
-      <table>dimmedicos</table>
-      <key>
-        <name>idmedicos</name>
-        <field>idmedicos</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <value>
-        <name>registroscrm</name>
-        <rename>registroscrm</rename>
-      </value>
-    </lookup>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>/G:/Meu Drive/BitBucketCFM/cfm/DW/FatMedicos</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>idffatmedicos</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>idfdimmedicos</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>0</precision>
+      </field>
+    </fields>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -635,7 +668,7 @@ GROUP BY id</sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>384</xloc>
+      <xloc>432</xloc>
       <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
