@@ -7,7 +7,7 @@
   <created_user>-</created_user>
   <created_date>2022/08/02 16:40:43.275</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2022/08/13 01:14:12.614</modified_date>
+  <modified_date>2022/08/13 01:21:40.642</modified_date>
   <parameters>
     </parameters>
   <connection>
@@ -377,7 +377,7 @@
       <attributes/>
       <sql>CREATE TABLE IF NOT EXISTS auditoria.tblmedicosdtnascimentoduplicados (
 	 id INT
-	,DtNascimento VARCHAR(50)
+	,IdMedico VARCHAR(50)
 );
 
 DROP TABLE IF EXISTS ValidaDuplicidadeDtnascimento;
