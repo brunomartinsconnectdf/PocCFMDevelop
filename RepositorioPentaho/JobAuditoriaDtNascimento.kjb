@@ -7,30 +7,22 @@
   <created_user>-</created_user>
   <created_date>2022/08/02 16:40:43.275</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2022/08/12 12:39:44.957</modified_date>
+  <modified_date>2022/08/13 01:14:12.614</modified_date>
   <parameters>
     </parameters>
   <connection>
-    <name>CFMLocal</name>
+    <name>CFMLocalPostgres</name>
     <server>localhost</server>
-    <type>MYSQL</type>
+    <type>POSTGRESQL</type>
     <access>Native</access>
-    <database>stagecfm</database>
-    <port>3306</port>
-    <username>root</username>
-    <password>Encrypted </password>
+    <database>cfm</database>
+    <port>5432</port>
+    <username>cfm</username>
+    <password>Encrypted 2be98afc86aa7f2e4860caa71ccc3fd89</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
     <attributes>
-      <attribute>
-        <code>EXTRA_OPTION_MYSQL.defaultFetchSize</code>
-        <attribute>500</attribute>
-      </attribute>
-      <attribute>
-        <code>EXTRA_OPTION_MYSQL.useCursorFetch</code>
-        <attribute>true</attribute>
-      </attribute>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
         <attribute>N</attribute>
@@ -45,7 +37,7 @@
       </attribute>
       <attribute>
         <code>PORT_NUMBER</code>
-        <attribute>3306</attribute>
+        <attribute>5432</attribute>
       </attribute>
       <attribute>
         <code>PRESERVE_RESERVED_WORD_CASE</code>
@@ -54,10 +46,6 @@
       <attribute>
         <code>QUOTE_ALL_FIELDS</code>
         <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>STREAM_RESULTS</code>
-        <attribute>Y</attribute>
       </attribute>
       <attribute>
         <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
@@ -378,53 +366,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>608</xloc>
-      <yloc>144</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
-      <name>TabelaDuplicidadeUm</name>
-      <description/>
-      <type>SQL</type>
-      <attributes/>
-      <sql>CREATE TABLE  ValidaDuplicidadeDtNascimento AS (SELECT
-   id    AS IdMedico
-  ,DataNascimento
-FROM MedicosEmAtividade
-GROUP BY id, DataNascimento);</sql>
-      <useVariableSubstitution>F</useVariableSubstitution>
-      <sqlfromfile>F</sqlfromfile>
-      <sqlfilename/>
-      <sendOneStatement>F</sendOneStatement>
-      <connection>CFMLocal</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>160</xloc>
-      <yloc>144</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
-      <name>DuplicidadeDois</name>
-      <description/>
-      <type>SQL</type>
-      <attributes/>
-      <sql>CREATE TABLE ValidaDuplicidadeDtNascimentoFinal AS (
-SELECT
-IdMedico
-FROM  ValidaDuplicidadeDtNascimento
-GROUP BY IdMedico
-HAVING COUNT(IdMedico) > 1);</sql>
-      <useVariableSubstitution>F</useVariableSubstitution>
-      <sqlfromfile>F</sqlfromfile>
-      <sqlfilename/>
-      <sendOneStatement>F</sendOneStatement>
-      <connection>CFMLocal</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>336</xloc>
-      <yloc>144</yloc>
+      <xloc>528</xloc>
+      <yloc>16</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -432,13 +375,37 @@ HAVING COUNT(IdMedico) > 1);</sql>
       <description/>
       <type>SQL</type>
       <attributes/>
-      <sql>DROP TABLE ValidaDuplicidadeDtNascimento;
-DROP TABLE ValidaDuplicidadeDtNascimentoFinal;</sql>
+      <sql>CREATE TABLE IF NOT EXISTS auditoria.tblmedicosdtnascimentoduplicados (
+	 id INT
+	,DtNascimento VARCHAR(50)
+);
+
+DROP TABLE IF EXISTS ValidaDuplicidadeDtnascimento;
+
+CREATE TEMPORARY TABLE ValidaDuplicidadeDtnascimento AS ( 
+SELECT
+   id    AS IdMedico
+  ,DataNascimento
+FROM cfm.stage.medicosematividade
+GROUP BY  id, DataNascimento);
+
+
+TRUNCATE TABLE auditoria.tblmedicosdtnascimentoduplicados;
+
+INSERT INTO auditoria.tblmedicosdtnascimentoduplicados 
+SELECT
+ROW_NUMBER () OVER (ORDER BY IdMedico) AS Id
+,IdMedico
+FROM ValidaDuplicidadeDtnascimento
+GROUP BY IdMedico
+HAVING COUNT(IdMedico) > 1;
+
+</sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>
       <sendOneStatement>F</sendOneStatement>
-      <connection>CFMLocal</connection>
+      <connection>CFMLocalPostgres</connection>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
@@ -475,28 +442,18 @@ DROP TABLE ValidaDuplicidadeDtNascimentoFinal;</sql>
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
       <run_configuration>Pentaho local</run_configuration>
-      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>480</xloc>
-      <yloc>144</yloc>
+      <xloc>336</xloc>
+      <yloc>16</yloc>
       <attributes_kjc/>
     </entry>
   </entries>
   <hops>
-    <hop>
-      <from>TabelaDuplicidadeUm</from>
-      <to>DuplicidadeDois</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
     <hop>
       <from>Start</from>
       <to>LimpezaDasTabelas</to>
@@ -507,26 +464,17 @@ DROP TABLE ValidaDuplicidadeDtNascimentoFinal;</sql>
       <unconditional>Y</unconditional>
     </hop>
     <hop>
-      <from>LimpezaDasTabelas</from>
-      <to>TabelaDuplicidadeUm</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>DuplicidadeDois</from>
-      <to>AuditoriaNascimentoFile</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
       <from>AuditoriaNascimentoFile</from>
       <to>Success</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>LimpezaDasTabelas</from>
+      <to>AuditoriaNascimentoFile</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
