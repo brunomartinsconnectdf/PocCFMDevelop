@@ -7,7 +7,7 @@
   <created_user>-</created_user>
   <created_date>2022/08/02 16:40:43.275</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2022/08/13 13:16:37.115</modified_date>
+  <modified_date>2022/08/14 01:44:16.044</modified_date>
   <parameters>
     </parameters>
   <connection>
@@ -366,7 +366,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>672</xloc>
+      <xloc>816</xloc>
       <yloc>128</yloc>
       <attributes_kjc/>
     </entry>
@@ -451,7 +451,7 @@ FROM TempDimMedicos;
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>432</xloc>
+      <xloc>576</xloc>
       <yloc>128</yloc>
       <attributes_kjc/>
     </entry>
@@ -477,7 +477,7 @@ ON A.id = B.idmedicos);</sql>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>320</xloc>
+      <xloc>464</xloc>
       <yloc>128</yloc>
       <attributes_kjc/>
     </entry>
@@ -516,7 +516,7 @@ ON A.id = B.idmedicos);</sql>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>576</xloc>
+      <xloc>720</xloc>
       <yloc>128</yloc>
       <attributes_kjc/>
     </entry>
@@ -559,6 +559,45 @@ ON A.id = B.idmedicos);</sql>
       <yloc>128</yloc>
       <attributes_kjc/>
     </entry>
+    <entry>
+      <name>UpdateDimMedicoEspecialidade</name>
+      <description/>
+      <type>TRANS</type>
+      <attributes/>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>UpdateDimMedicosEspecialidade</transname>
+      <directory>/</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <run_configuration>Pentaho local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>320</xloc>
+      <yloc>96</yloc>
+      <attributes_kjc/>
+    </entry>
   </entries>
   <hops>
     <hop>
@@ -589,15 +628,6 @@ ON A.id = B.idmedicos);</sql>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>FatMedicos</from>
-      <to>DimMedicosCSV</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
       <from>DimMedicos</from>
       <to>UpdateRegistrosCRMDimMedicos</to>
       <from_nr>0</from_nr>
@@ -607,7 +637,25 @@ ON A.id = B.idmedicos);</sql>
       <unconditional>N</unconditional>
     </hop>
     <hop>
+      <from>FatMedicos</from>
+      <to>DimMedicosCSV</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
       <from>UpdateRegistrosCRMDimMedicos</from>
+      <to>UpdateDimMedicoEspecialidade</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>UpdateDimMedicoEspecialidade</from>
       <to>FatMedicos</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
